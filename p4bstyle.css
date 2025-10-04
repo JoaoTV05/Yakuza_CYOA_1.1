@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    background: radial-gradient(circle, rgb(10, 10, 10) 0%, rgb(20, 20, 20) 75%);
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;      
+    margin: 0;     
+
+    animation: texto 5s forwards;
+    opacity: 0;
+}
+
+@keyframes texto {
+    to{
+        opacity: 1;
+    }    
+}
+
+.container {
+    max-width: 900px;
+    padding: 0;
+}
+
+#cabeca {
+    margin: 0;
+}
+
+#cabeca h1 {
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(180, 180, 180) 75%);
+    margin: 0;
+    padding-left: 10px;
+    line-height: 40px;
+    font-size: 42px;
+    padding: 18px;
+    text-align: center;
+}
+
+#cabeca h2 {
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(180, 180, 180) 75%);
+    margin: 0;
+    line-height: 40px;
+    line-height: 28px;
+    font-size: 56px;
+    padding-top: 16px;
+    padding-bottom: 36px;
+    text-align: center;
+}
+
+img {
+    height: 300px;
+    width: 900px;
+    align-self: center;
+}
+
+article {
+    background: rgb(29, 29, 29);
+    margin: 0;
+    color: white;
+
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 24px;
+
+    text-align: justify;
+    line-height: 1.5;
+    font-family: Constantia, "Palatino Linotype", Palatino, Georgia, serif;
+    font-size: 24px
+}
+
+.decisao {
+    color: rgb(45, 94, 185);
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(44, 44, 44);
+}
+
+#ukifazerr {
+    text-align: center;
+    white-space: pre-wrap;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.escolha {
+    display: flex; 
+    vertical-align: middle;
+    justify-content: center;
+
+    padding: 15px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(180, 180, 180) 75%);
+    border: solid 4px black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.audio-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}

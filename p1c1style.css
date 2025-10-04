@@ -1,0 +1,98 @@
+body{
+    background: #ffffff;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(180, 180, 180) 75%);
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+
+    height: 100%;
+    width: 100%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;           
+  }
+
+h1{
+    font-size: 75px;
+    color: black;
+    padding-top: 200px;
+    
+    opacity: 0;
+    transform: translateY(-500px) scale(0.2);
+    animation: capitulo 1s ease-out forwards;
+}
+
+@keyframes capitulo {
+    0% {
+        opacity: 0;
+        transform: translate(0, -25%) scale(3); 
+    }
+
+    100% {
+        transform: translate(0,0) scale(1); 
+        
+        opacity: 1;
+    }
+}
+
+h2{
+    font-size: 150px;
+    position: relative;
+    top: -125px;
+    
+    animation: titulo 2.5s ease-out forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+
+@keyframes titulo {
+    0% {
+        opacity: 0;
+        transform: translate(0, -25%) scale(3); 
+    }
+
+    100% {
+        transform: translate(0,0) scale(1); 
+        
+        opacity: 1;
+    }
+}
+
+a{
+    color: white;
+    text-decoration: none;
+
+    font-size: 50px;
+    color: white;
+    opacity: 0;
+
+    background-color: rgba(0, 0, 0, .5);
+    width: 640px;
+    text-align: center;
+
+    animation: comecar 1.5s forwards;
+    animation-delay: 5s;
+
+    position: relative;
+    top: -50px;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+@keyframes comecar {
+    to {
+        opacity: 1;
+    }
+}
+
+.audio-container{
+    position: absolute;
+    top: 10px;
+    left: 10px
+}

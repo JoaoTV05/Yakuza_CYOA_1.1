@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background: #ffffff;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(180, 180, 180) 75%);
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+
+    height: 100%;
+    width: 100%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 50px          
+  }
+
+h1{
+    font-size: 250px;
+    color: darkred;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: black;
+    opacity: 0;
+    transform: translateY(-500px) scale(0.2);
+    animation: yakuza 1.5s ease-out forwards;
+    padding-top: 200px;
+    margin: 0;
+}
+
+@keyframes yakuza {
+    0% {
+        opacity: 0;
+        transform: translate(0, -25%) scale(3); 
+    }
+
+    100% {
+        transform: translate(0,0) scale(1); 
+        opacity: 1;
+    }
+}
+
+h2{
+    font-size: 60px;
+    animation: escolha 1.5s ease-out forwards;
+    animation-delay: 1s;
+    transform: translateY(-500px) scale(0.2);
+    padding-bottom: 100px;
+    opacity: 0;
+    margin: 0;
+}
+
+@keyframes escolha {
+    0% {
+        opacity: 0;
+        transform: translate(0, -25%) scale(3); 
+    }
+
+    100% {
+        transform: translate(2%, -45%) scale(1); 
+        opacity: 1;
+    }
+}
+
+a{
+    color: white;
+    text-decoration: none;
+
+    font-size: 50px;
+    color: white;
+    opacity: 0;
+
+    background-color: rgba(0, 0, 0, .5);
+    width: 640px;
+    text-align: center;
+
+    animation: comecar 1.5s forwards;
+    animation-delay: 3s;
+    margin: 0;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+@keyframes comecar {
+    to {
+        opacity: 1;
+    }
+}
+
+.audio-container{
+    position: absolute;
+    top: 10px;
+    left: 10px
+}
